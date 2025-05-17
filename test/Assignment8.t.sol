@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
 import {Test} from "forge-std/Test.sol";
@@ -9,7 +9,7 @@ contract Assignment8Test is Test {
     string public temporaryUriForTesting = "https://azure-yearning-shrew-339.mypinata.cloud/ipfs/bafkreifo3hg2hnig5ojay3tonmf6un3qlxqjienffsmpkq5cfpept2fake";
 
     function setUp() public {
-        assignment = new Assignment8();
+        assignment = new Assignment8("shex", "shx");
     }
 
     function testMintNFTByOwner() public {
